@@ -17,12 +17,18 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>{{ message }}</h1>
         <p>Welcome to the fancy MSOE greeting!</p>
+        <img src="{{ url_for('static', filename='msoe_logo.png') }}" alt="MSOE Logo">
     </div>
 </body>
 </html>
